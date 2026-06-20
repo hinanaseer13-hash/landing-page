@@ -165,3 +165,51 @@ footer{
         gap:15px;
     }
 }
+/* Service Page */
+
+.service-hero{
+    height:60vh;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.service-content h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.service-content p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+.services-section{
+    padding:100px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:#f8fafc;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-card h2{
+    color:#4f46e5;
+    margin-bottom:15px;
+}
