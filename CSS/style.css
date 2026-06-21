@@ -218,9 +218,16 @@ footer{
     background:#007bff;
     color:white;
     border:none;
-    border-radius:5px;
+    border-radius: 50px;
     cursor:pointer;
     font-size:18px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#signupBtn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
 .popup{
