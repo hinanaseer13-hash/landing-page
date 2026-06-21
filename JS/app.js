@@ -19,3 +19,20 @@ window.addEventListener("scroll", () => {
         nav.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
     }
 });
+const signupBtn = document.getElementById("signupBtn");
+const popup = document.getElementById("popup");
+const closeBtn = document.querySelector(".close");
+
+signupBtn.addEventListener("click", () => {
+    popup.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target == popup) {
+        popup.style.display = "none";
+    }
+});
