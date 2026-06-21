@@ -17,6 +17,27 @@
             <li><a href="service.html">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+         <button class="login-btn" onclick="openForm()">
+        Login
+    </button>
+
+    <div class="popup" id="loginPopup">
+        <div class="form-box">
+            <span class="close-btn" onclick="closeForm()">×</span>
+
+            <h2>Welcome Back</h2>
+
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+
+                <button type="submit" class="submit-btn">
+                    Sign In
+                </button>
+            </form>
+        </div>
+    </div>
+
     </nav>
 
     <section class="hero" id="home">

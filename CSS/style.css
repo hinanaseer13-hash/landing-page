@@ -213,3 +213,104 @@ footer{
     color:#4f46e5;
     margin-bottom:15px;
 }
+/* Login Button */
+.login-btn{
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#4f46e5;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Popup Background */
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Form Box */
+.form-box{
+    width:380px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    position:relative;
+    animation:popup 0.3s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.form-box h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.form-box input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.form-box input:focus{
+    border-color:#4f46e5;
+}
+
+/* Login Form Button */
+.submit-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Close Button */
+.close-btn{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:28px;
+    cursor:pointer;
+    color:#666;
+}

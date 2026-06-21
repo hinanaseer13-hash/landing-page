@@ -19,3 +19,10 @@ window.addEventListener("scroll", () => {
         nav.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
     }
 });
+function openForm() {
+    document.getElementById("loginPopup").style.display = "flex";
+}
+
+function closeForm() {
+    document.getElementById("loginPopup").style.display = "none";
+}
